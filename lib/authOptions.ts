@@ -32,7 +32,7 @@ export const authOptions: NextAuthOptions = {
 
         // Check if the entered password matches the hashed password
         const isPasswordValid = await bcrypt.compare(
-          credentials?.password,
+          credentials!.password,
           user.password
         );
 
