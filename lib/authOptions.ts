@@ -53,7 +53,7 @@ export const authOptions: NextAuthOptions = {
 
       return session;
     },
-    /* signIn: async ({ account, profile }) => {
+    signIn: async ({ account, profile }) => {
       await connectDB();
       console.log("what??");
       if (!profile?.email) {
@@ -69,6 +69,6 @@ export const authOptions: NextAuthOptions = {
       );
 
       return true;
-    }, */
+    },
   },
 };
