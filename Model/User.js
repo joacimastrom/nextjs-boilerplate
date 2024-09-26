@@ -16,10 +16,6 @@ const User = mongoose.Schema(
       type: String,
       required: [true, "Name is required"],
     },
-    createdAt: {
-      type: Date,
-      default: () => new Date(),
-    },
   },
   {
     timestamps: true,
